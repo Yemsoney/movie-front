@@ -172,6 +172,7 @@ const Footer: React.FC = () => {
               <option value="en">English</option>
               <option value="km">ខ្មែរ</option>
             </select>
+            
           </div>
         </motion.div>
       </div>
