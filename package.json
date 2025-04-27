@@ -1,5 +1,6 @@
 {
-  "name": "vite-react-typescript-starter",
+  "homepage": "https://yemsoney.github.io/movie-frondend",
+  "name": "movie-frondend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "postinstall": "npm run build",
+    "postbuild": "gh-pages -d dist",
+    "postpreview": "gh-pages -d dist"
+    
   },
   "dependencies": {
     "framer-motion": "^11.0.3",
